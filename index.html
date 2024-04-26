@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="assets/imagens/logo.ico" rel = "shortcut icon"> <!-- Este comando coloca um icone na parte de cima da página-->
+    <title>Petinder - Amor aos pets</title>
+</head>
+
+<body>
+    <header> 
+            <img src="assets/imagens/logo.jpeg" title="Amor aos pets" class="logo"/>
+    </header>
+
+    <main>  
+        <section class = "corpo">
+            <h1 class="titulo-padrao"> Lista de Encomendas</h1>
+                       
+        </section>   
+    </main>
+    <br>
+    <table id="tabela-clientes">
+            <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Total</th>
+                    </tr>
+            </thead>
+            
+            <tbody>
+                    <tr class = "cliente">
+                        <td class = "info_nome">Margarete</td>
+                        <td class = "info_produto">Jogo Americano (4 peças) - Rosa</td>
+                        <td class = "info_qtde">10</td>
+                        <td class = "info_val_unit">30</td>
+                        <td class = "info_val_tot">-</td>
+                    </tr>
+                            
+                    <tr class = "cliente">
+                        <td class = "info_nome">Carolina</td>
+                        <td class = "info_produto">Tapetes Cozinha (3 peças) - Azul</td>
+                        <td class = "info_qtde">1</td>
+                        <td class = "info_val_unit">1</td>
+                        <td class = "info_val_tot">-</td>
+                    </tr>
+
+                    <tr class = "cliente">
+                        <td class = "info_nome">João</td>
+                        <td class = "info_produto">Microfone (2 peças) - Preto</td>
+                        <td class = "info_qtde">8</td>
+                        <td class = "info_val_unit">a</td>
+                        <td class = "info_val_tot">-</td>
+                    </tr>
+            </tbody>
+    </table>
+<br>
+    <hr>
+
+<h1 class="titulo-nova_encomenda"> Adicionar nova Encomenda</h1>
+
+<form id="formu" class = "formulario">
+    <div class="form_esquerda_superior">
+        <label for="nom">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite o nome do(a) cliente" required>
+    </div> 
+       
+    <div class="form_direita_superior">
+        <label for="quantidd">Quantidade:</label>
+        <input type="number" id="quantidade" placeholder="Digite a quantidade encomendada" min="1" max="10" required>
+    </div>
+
+
+    <div class="form_esquerda_inferior">
+        <label for="produc">Produto:</label>
+        <select id="product" placeholder="Selecione" required>
+            <option value="">Selecione o produto</option>
+            <option value="Toalha redonda">Tolha redonda</option>
+            <option value="Jogo de pratos">Jogo de pratos</option>
+            <option value="Faqueiro pequeno">Faqueiro pequeno</option>
+            <option value="Faqueiro grande">Faqueiro grande</option>
+        </select>
+    </div>    
+   
+    <div class="form_direita_inferior">
+        <label for="unitari">Valor Unitário:</label>
+        <input type="number" id="unitario" placeholder="Digite o valor unitário do cliente" required>
+    </div>
+
+    <div class = "botao">
+        <input type="submit" id="botao" value="Adicionar" class="btn-add">
+    </div>
+
+</form>
+
+    <script src = "assets/js/valida_qtd.js"></script>
+    <script src = "assets/js/valida_val_unit.js"></script>
+    <script src = "assets/js/formata_unit_tot.js"></script>
+    <script src = "assets/js/inclusao.js"></script>
+    <script src = "assets/js/calcula_total.js"></script>
+    
+
+</body>
+</html>
