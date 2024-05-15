@@ -3,21 +3,29 @@ var botaoAdicionar = document.querySelector('#botao');
 botaoAdicionar.addEventListener('click', function(event) {
     event.preventDefault();                                // Impede o envio do formulário
     
+
     var form = document.querySelector('#formu');
 
     //Obtém os dados da encomenda
     var encomenda = obtemEncomenda(form);
 
+    //Valida os dados do formulário
+    var validacao = validaEncomenda(encomenda);
+
     //Valida os dados da encomenda
-    if(validaEncomenda(encomenda).length>0){
-        //Dados inválidos, exibe erro
-        console.log(validaEncomenda(encomenda));
+    if(validacao.length>0){
+        //Há erros de preenchimento , informa para o usuário
+        exibeMensagensErro(validacao);
+        return;
     }else{
         //Encomenda OK, insere na tabela
         //Insere a encomenda na tabela
         addEncomenda(obtemEncomenda(form));
 
         form.reset();
+
+        // Limpa a lista de erros
+        document.querySelector("#mensagens-erro").innerHTML = "";
     }
 });
 
@@ -87,5 +95,26 @@ botaoAdicionar.addEventListener('click', function(event) {
             erros.push("O valor unitário é inválido!");
         }
 
+        if(erros>0){
+            newpopupWindow = window.open ('', 'pagina', "width=600 height=100 top=350 left=400");
+            newpopupWindow.document.write (erros); 
+        }
         return erros;
+    }
+
+    // Função para exibir os erros de preenchimento do formulário
+    function exibeMensagensErro(msgs){
+        
+        var ul = document.querySelector("#mensagens-erro");
+
+        //Limpa a UL
+        ul.innerHTML = "";
+        msgs.forEach(function(erro){
+            var li = document.createElement("li");
+            li.textContent = erro;
+            
+            ul.appendChild(li);
+            
+        })
+        
     }

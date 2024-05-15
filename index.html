@@ -14,7 +14,8 @@
     <main>  
         <section class = "corpo">
             <h1 class="titulo-padrao"> Lista de Encomendas</h1>
-                       
+            <label for= "filtraTabela">Filtrar</label>
+            <input type= "text" id="filtrar-tabela" placeholder= "Digite o nome do cliente: ">          
         </section>   
     </main>
     <br>
@@ -59,7 +60,7 @@
     <hr>
 
 <h1 class="titulo-nova_encomenda"> Adicionar nova Encomenda</h1>
-
+<ul id = "mensagens-erro"></ul>
 <form id="formu" class = "formulario">
     <div class="form_esquerda_superior">
         <label for="nom">Nome:</label>
@@ -99,6 +100,8 @@
     <script src = "assets/js/formata_unit_tot.js"></script>
     <script src = "assets/js/inclusao.js"></script>
     <script src = "assets/js/calcula_total.js"></script>
+    <script src = "assets/js/excluir_linha.js"></script>
+    <script src = "assets/js/filtrar.js"></script>
     
 
 </body>

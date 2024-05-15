@@ -35,15 +35,3 @@ function calculaTotal (qtdeEncomenda, unitarioProduto){
    
     }  
 }
-
-/* var botaoAdicionar = document.querySelector("btn-add");
-    
-botaoAdicionar.addEventListener("click", function(event){
-    event.preventDefault();
-    console.log("Encomenda adicionada com sucesso");
-});
-
-document.createElement("tr");
-var linha = document.createElement("tr");
-var coluna = document.createElement("td");
-linha.appendChild(coluna);    */
