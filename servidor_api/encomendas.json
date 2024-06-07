@@ -1,0 +1,43 @@
+{
+    "encomendas": [
+        {
+            "nome": "Bruce Wayne",
+            "produto": "Pulseira de Cristal - Preta",
+            "qtde": 2,
+            "unitario": 20,
+            "total": 0
+        },
+
+        {
+            "nome": "Stevie Wonder",
+            "produto": "Pacote de ração úmida",
+            "qtde": 1,
+            "unitario": 400,
+            "total": 0
+        },
+
+        {
+            "nome": "Gleydson Monteiro",
+            "produto": "Ração Golden 20kg frango",
+            "qtde": 1,
+            "unitario": 4000,
+            "total": 0
+        },
+
+        {
+            "nome": "Charlotte",
+            "produto": "Ossinhos de couro de boi",
+            "qtde": 100,
+            "unitario": 10,
+            "total": 0
+        },
+
+        {
+            "nome": "Alecrim",
+            "produto": "Cordas com laço",
+            "qtde": 10,
+            "unitario": 20,
+            "total": 0
+        }
+    ]
+}

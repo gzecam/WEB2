@@ -26,7 +26,13 @@ header{
 
 .corpo{
     border-bottom: 2px solid;
+    color: rgba(187, 19, 19);
+    border-color: green;
     width:100%;  
+}
+
+.textFiltrar{
+    color: green;
 }
 
 .titulo-padrao{
@@ -35,11 +41,11 @@ header{
     padding-bottom: 10px;
     text-align: left;
     font-size: 30px;
-    color: #000000ec;
+    color: green;
 }
 
 .info-invalida{
-    background-color: rgb(255,0,0);
+    background-color: red;
 }
 
 .titulo-nova_encomenda{
@@ -48,7 +54,7 @@ header{
     padding-bottom: 10px;
     text-align: left;
     font-size: 24px;
-    color: #000000ec;
+    color: green;
 }
 
 .formulario{
@@ -62,10 +68,10 @@ header{
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    color: rgb(0, 19, 191);
-    -moz-box-shadow: 1px 1px 1px 1px rgb(0, 19, 191);
-    -webkit-box-shadow: 1px 1px 1px 1px rgb(0, 19, 191);
-    box-shadow: 1px 1px 1px 1px rgb(0, 19, 191);
+    color: green;
+    -moz-box-shadow: 1px 1px 1px 1px green;
+    -webkit-box-shadow: 1px 1px 1px 1px green;
+    box-shadow: 1px 1px 1px 1px green;
 }
 
 
@@ -121,11 +127,12 @@ input:focus {
     color:rgb(0, 0, 0);
     -moz-box-shadow: 2px 2px 2px rgb(255, 0, 0);
     -webkit-box-shadow: 2px 2px 2px rgb(255, 0, 0);
-    box-shadow: 3px 3px 3px rgb(0, 0, 255);
+    box-shadow: 3px 3px 3px rgba(6, 101, 28, 0.559);
 }
 
 select{
     font-size: 20px;
+    color: green;
     width:350px;
     height: 30px;
     
@@ -136,26 +143,26 @@ select{
     padding-bottom: 10px;
     text-align: center;
     padding-left: 125px;
+    padding-top: 10px;
 }
 
 .btn-add {
     color: #ffffff;
-    background: #6c8df7 ;
+    background: green;
     cursor:text;
     transition: 0.5s;
     font-size: medium;
     font-weight: bold;
     font-family: Arial;
     height: 40px;
-    
     text-align: center;
   }
   
 .btn-add:hover {
-    background-color:rgb(0, 10, 191);
-    -moz-box-shadow: 0 2px 2px 2px rgb(0, 10, 191);
+    background-color:rgba(1, 155, 37, 0.366);
+    -moz-box-shadow: 0 2px 2px 2px rgba(1, 155, 37, 0.366);
     -webkit-box-shadow: 0 2px 2px 2px rgb(0, 0, 0);
-    box-shadow: 0 2px 2px 2px rgb(0, 0, 255);
+    box-shadow: 0 2px 2px 2px rgba(1, 155, 37, 0.366);
   }
 
 
@@ -166,7 +173,8 @@ table, th, td {
     table-layout: fixed;
     font-size: 20px;
     margin: 0 auto;
-    left: 300px;  
+    left: 300px; 
+    color:darkslategrey;
   }
 
 #mensagens-erro{
@@ -175,3 +183,18 @@ table, th, td {
     text-align: left;
 
 }  
+
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
+
+#filtrar-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.invisivel{
+    display: none;
+}

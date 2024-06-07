@@ -14,7 +14,10 @@
     <main>  
         <section class = "corpo">
             <h1 class="titulo-padrao"> Lista de Encomendas</h1>
-                       
+            <p id="cotacao_dolar"></p>
+            <label class = "textFiltrar" for= "filtraTabela">Filtrar</label>
+            <input type= "text" id="filtrar-tabela" placeholder= "Digite o nome do cliente: ">
+                     
         </section>   
     </main>
     <br>
@@ -32,29 +35,40 @@
             <tbody>
                     <tr class = "cliente">
                         <td class = "info_nome">Margarete</td>
-                        <td class = "info_produto">Jogo Americano (4 peças) - Rosa</td>
-                        <td class = "info_qtde">10</td>
-                        <td class = "info_val_unit">30</td>
+                        <td class = "info_produto">Raça Premiere Carne 20kg</td>
+                        <td class = "info_qtde">2</td>
+                        <td class = "info_val_unit">200</td>
                         <td class = "info_val_tot">-</td>
                     </tr>
                             
                     <tr class = "cliente">
                         <td class = "info_nome">Carolina</td>
-                        <td class = "info_produto">Tapetes Cozinha (3 peças) - Azul</td>
+                        <td class = "info_produto">Tapete gelado tamanho G</td>
                         <td class = "info_qtde">1</td>
-                        <td class = "info_val_unit">1</td>
+                        <td class = "info_val_unit">125</td>
                         <td class = "info_val_tot">-</td>
                     </tr>
 
                     <tr class = "cliente">
                         <td class = "info_nome">João</td>
-                        <td class = "info_produto">Microfone (2 peças) - Preto</td>
-                        <td class = "info_qtde">8</td>
+                        <td class = "info_produto">Kit removedor subpelos</td>
+                        <td class = "info_qtde">3</td>
                         <td class = "info_val_unit">a</td>
+                        <td class = "info_val_tot">-</td>
+                    </tr>
+
+                    <tr class = "cliente">
+                        <td class = "info_nome">Patrick</td>
+                        <td class = "info_produto">Osso tipo nó n5</td>
+                        <td class = "info_qtde">-1</td>
+                        <td class = "info_val_unit">20</td>
                         <td class = "info_val_tot">-</td>
                     </tr>
             </tbody>
     </table>
+
+    <button id="buscar-encomendas" class="btn-add">Buscar Encomendas</button>
+
 <br>
     <hr>
 
@@ -76,10 +90,12 @@
         <label for="produc">Produto:</label>
         <select id="product" placeholder="Selecione" required>
             <option value="">Selecione o produto</option>
-            <option value="Toalha redonda">Tolha redonda</option>
-            <option value="Jogo de pratos">Jogo de pratos</option>
-            <option value="Faqueiro pequeno">Faqueiro pequeno</option>
-            <option value="Faqueiro grande">Faqueiro grande</option>
+            <option value="Ração Golden 15kg">Ração Golden 15kg</option>
+            <option value="Cama acolchoada tamanho G">Cama acolchoada tamanho G</option>
+            <option value="Petiscos caninos">Petiscos caninos</option>
+            <option value="Kit Banho Anti Pulgas">Kit Banho Anti Pulgas</option>
+            <option value="Coleira modelo peitoral">Coleira modelo peitoral</option>
+            <option value="Guia de passeio com mola">Guia de passeio com mola</option>
         </select>
     </div>    
    
@@ -100,7 +116,9 @@
     <script src = "assets/js/inclusao.js"></script>
     <script src = "assets/js/calcula_total.js"></script>
     <script src = "assets/js/excluir_linha.js"></script>
-    
+    <script src = "assets/js/filtrar.js"></script>
+    <script src = "assets/js/buscar-encomenda.js"></script>
+    <script src = "assets/js/cotacao.js"></script>
 
 </body>
 </html>
